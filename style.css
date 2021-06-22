@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(250, 245, 238, 0.5);
+    height: 100vh;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pink-car {
+  animation: car2 12s infinite linear backwards;
+}
+#girl{
+ animation: girl-walking 30s infinite linear backwards;
+}
+#redCar {
+  animation: car1 8s infinite linear;
+}
+
+#trees {
+  animation: trees 2s ease-in-out infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#cloud {
+  animation: car1 18s infinite linear;
+}
+
+#front-leg {
+  animation: fronts 1s ease infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+#back-leg, #hand {
+  animation: rights 1s ease infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes car1 {
+  from {
+    transform: translate(-800px);
+  }
+  to {
+    transform: translate(700px);
+  }
+}
+@keyframes car2 {
+  from {
+    transform: translate(800px);
+  }
+  to {
+    transform: translate(-700px);
+  }
+}
+@keyframes girl-walking {
+  from {
+    transform: translate(130px);
+  }
+  to {
+    transform: translate(-1000px);
+  }
+}
+@keyframes trees {
+  0% {
+    transform: skewX(-3deg);
+  }
+  50% {
+    transform: skewX(3deg);
+  }
+  100% {
+    transform: skewX(-3deg);
+  }
+}
+@keyframes fronts {
+  0% {
+    transform: rotateZ(-20deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(-25deg);
+  }
+}
+@keyframes rights {
+  0% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
